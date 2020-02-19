@@ -1,15 +1,15 @@
 $(document).foundation();
 
-$(function() {
-  $('.search')
-    .bind('click', function(event) {
-      $(".search-field").toggleClass("expand-search");
+
+  $('#expandsearch')
+    .on('click', function(event) {
+      $("#searchfield").toggleClass("expand-search");
 
       // if the search field is expanded, focus on it
-      if ($(".search-field").hasClass("expand-search")) {
-        $(".search-field").focus();
+      if ($("#searchfield").hasClass("expand-search")) {
+        $("#searchfield").focus();
       }
     })
-});
+
 
 
