@@ -16,7 +16,7 @@ $("#searchB").on("click", function (event) {
       title.css("text-decoration", "underline")
       var cuisine = $("<p>" + response.restaurants[i].restaurant.cuisines + "</p>");
       cuisine.css("font-style", "italic");
-      cuisine.css("color", "orange");
+      cuisine.css("color", "#a00505");
       var address = $("<p><b>Address:</b> " + response.restaurants[i].restaurant.location.address + "</p>")
       address.attr("data-name", response.restaurants[i].restaurant.R.res_id)
       address.css("font-style", "italic");

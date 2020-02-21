@@ -19,9 +19,9 @@
   }
 
   .hero-section {
-    background: url("https://images.pexels.com/photos/9315/menu-restaurant-france-eating-9315.jpg") 50% no-repeat;
+    background: url("https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") 70% no-repeat;
     background-size: cover;
-    height: 30vh;
+    height: 45vh;
     text-align: center;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -32,6 +32,7 @@
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-bottom: 15px;
   }
 
   .hero-section .hero-section-text {
@@ -85,14 +86,29 @@
     margin-left: 2px;
   }
 
+  #results {
+    /* background: url("https://images.pexels.com/photos/349610/pexels-photo-349610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") 50% no-repeat; */
+    background-size: cover;
+  
+  }
+
   .locate:hover {
     color: tomato;
     cursor: pointer;
+
+  }
+
+  .pic {
+    background: url(https://images.pexels.com/photos/349610/pexels-photo-349610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) 50% no-repeat;
+    /* background-size: cover; */
+    background-size: 100%;
+    background-attachment: fixed;
   }
 </style>
 
-<body>
+<body class="pic">
   <div class="hero-section">
+
     <div>
       <h1 class="hero-section-text">Food Finder</h1>
     </div>
@@ -124,6 +140,7 @@
     <div class="medium-4 columns" id="results">
     </div>
   </div>
+  
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js"></script>
