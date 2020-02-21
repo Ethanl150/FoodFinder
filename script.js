@@ -11,13 +11,16 @@ $("#searchB").on("click", function (event) {
   }).then(function (response) {
     for (i = 0; i < limit; i++) {
       var newDiv = $("<div>").css("border-bottom", "2px solid #b3aead")
+      newDiv.addClass("result-div")
       var title = $("<a href=" + response.restaurants[i].restaurant.url + " target='_blank'><h1>" + response.restaurants[i].restaurant.name + "</h1></a>")
       title.css("text-decoration", "underline")
       var cuisine = $("<p>" + response.restaurants[i].restaurant.cuisines + "</p>");
       cuisine.css("font-style", "italic");
       cuisine.css("color", "orange");
       var address = $("<p><b>Address:</b> " + response.restaurants[i].restaurant.location.address + "</p>")
+      address.attr("data-name", response.restaurants[i].restaurant.R.res_id)
       address.css("font-style", "italic");
+      address.addClass("locate")
       var rating = $("<p><b>Rating:</b> " + response.restaurants[i].restaurant.user_rating.aggregate_rating + "/5 &#11088;</p>")
 
       if (response.restaurants[i].restaurant.user_rating.rating_text == "Not rated") {
