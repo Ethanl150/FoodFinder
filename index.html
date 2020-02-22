@@ -75,10 +75,14 @@
     border-radius: -1px;
   }
 
+  #map-div {
+    position: sticky;
+    top: 12em;
+  }
+
   #map {
     height: 350px;
-    width: 650px;
-    background-color: aqua;
+    width: 85%; 
   }
 
   #searchB {
@@ -87,12 +91,11 @@
   }
 
   #results {
-    /* background: url("https://images.pexels.com/photos/349610/pexels-photo-349610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") 50% no-repeat; */
     background-size: cover;
   
   }
 
-  .locate:hover {
+  a h1:hover, .locate:hover {
     color: tomato;
     cursor: pointer;
 
@@ -100,7 +103,6 @@
 
   .pic {
     background: url(https://images.pexels.com/photos/349610/pexels-photo-349610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) 50% no-repeat;
-    /* background-size: cover; */
     background-size: 100%;
     background-attachment: fixed;
   }
@@ -133,7 +135,7 @@
   </div>
 
   <div class="row">
-    <div class="medium-8 columns">
+    <div id="map-div" class="medium-8 columns">
       <div id="map"></div>
 
     </div>
@@ -145,6 +147,13 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js"></script>
   <script src="script.js"></script>
+  <script src="map.js"></script>
+  <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPMGWoQW4S80xc4w2QXj3kAthb8ONk3I0&callback=initMap"
+      ;
+    ></script>
 </body>
 
 </html>
