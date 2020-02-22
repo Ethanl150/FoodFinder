@@ -75,15 +75,14 @@
     border-radius: -1px;
   }
 
+  #map-div {
+    position: sticky;
+    top: 12em;
+  }
+
   #map {
     height: 350px;
-    width: 650px;
-    background-color: aqua;
-    
-    position: sticky;
-  
-    
-    
+    width: 100%; 
   }
 
   #searchB {
@@ -92,12 +91,11 @@
   }
 
   #results {
-    /* background: url("https://images.pexels.com/photos/349610/pexels-photo-349610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") 50% no-repeat; */
     background-size: cover;
   
   }
 
-  .locate:hover {
+  a h1:hover, .locate:hover {
     color: tomato;
     cursor: pointer;
 
@@ -105,7 +103,6 @@
 
   .pic {
     background: url(https://images.pexels.com/photos/349610/pexels-photo-349610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) 50% no-repeat;
-    /* background-size: cover; */
     background-size: 100%;
     background-attachment: fixed;
   }
@@ -138,7 +135,7 @@
   </div>
 
   <div class="row">
-    <div class="medium-8 columns">
+    <div id="map-div" class="medium-8 columns">
       <div id="map"></div>
 
     </div>

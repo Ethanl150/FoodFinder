@@ -13,7 +13,6 @@ $("#searchB").on("click", function (event) {
       var newDiv = $("<div>").css("border-bottom", "2px solid #b3aead")
       newDiv.addClass("result-div")
       var title = $("<a href=" + response.restaurants[i].restaurant.url + " target='_blank'><h1>" + response.restaurants[i].restaurant.name + "</h1></a>")
-      title.css("text-decoration", "underline")
       var cuisine = $("<p>" + response.restaurants[i].restaurant.cuisines + "</p>");
 	  cuisine.css("font-style", "italic");
       cuisine.css("color", "#a00505");
